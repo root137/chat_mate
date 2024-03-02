@@ -110,10 +110,8 @@ class _ChatPageState extends State<ChatPage> {
             ),
           ),
           _loading
-              ? const CircularProgressIndicator.adaptive()
-              : const SizedBox(
-                  height: 4,
-                ),
+              ? const CircularProgressIndicator()
+              : const SizedBox.shrink(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
