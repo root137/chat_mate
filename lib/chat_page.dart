@@ -110,7 +110,9 @@ class _ChatPageState extends State<ChatPage> {
             ),
           ),
           _loading
-              ? const CircularProgressIndicator()
+              ? LinearProgressIndicator(
+                  color: Colors.blue.shade400,
+                )
               : const SizedBox.shrink(),
           Padding(
             padding: const EdgeInsets.all(8.0),
